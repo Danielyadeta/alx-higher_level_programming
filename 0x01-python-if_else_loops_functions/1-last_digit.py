@@ -4,9 +4,6 @@ number = random.randint(-10000, 10000)
 
 num = number
 
-if number < 0:
-    number = -(number)
-
 lastD = number % 10
 
 if lastD > 5:
