@@ -21,3 +21,4 @@ elif lastD < 6:
 
 print("Last digit of {:d} is {:d}".format(number, lastD), string)
 
+
