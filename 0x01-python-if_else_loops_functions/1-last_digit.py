@@ -4,7 +4,13 @@ number = random.randint(-10000, 10000)
 
 num = number
 
-lastD = number % 10
+if number < 0:
+	num = -(number)
+
+lastD = num % 10
+
+if number < 0:
+	lastD = -(lastD)
 
 if lastD > 5:
     string = "and is greater than 5"
