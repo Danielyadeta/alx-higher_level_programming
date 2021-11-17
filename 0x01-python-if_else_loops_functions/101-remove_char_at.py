@@ -5,7 +5,7 @@ def remove_char_at(str, n):
 	count = 0
 
 	for i in str:
-		count++
+		count = count + 1
 
 		if count == n:
 			continue
