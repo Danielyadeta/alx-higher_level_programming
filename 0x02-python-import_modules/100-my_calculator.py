@@ -26,4 +26,3 @@ elif oprnd == "*":
     print("{:d} * {:d} = {:d}".format(a, b, mul(a, b)))
 elif oprnd == "/":
     print("{:d} / {:d} = {:d}".format(a, b, div(a, b)))
-
