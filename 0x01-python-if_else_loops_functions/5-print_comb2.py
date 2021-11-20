@@ -5,5 +5,3 @@ for i in range(0, 100):
         delim = ""
 
     print("{:02d}".format(i), end=delim)
-
-print(" ")
