@@ -20,5 +20,3 @@ elif lastD < 6:
     string = "and is less than 6 and not 0"
 
 print("Last digit of {:d} is {:d}".format(number, lastD), string)
-
-
