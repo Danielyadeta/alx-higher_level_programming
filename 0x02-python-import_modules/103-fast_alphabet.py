@@ -1,3 +1,4 @@
 #!/usr/bin/python3
 if __name__ == "__main__":
-    import fast_alphabet_103
+    import string
+    print(string.ascii_uppercase)
