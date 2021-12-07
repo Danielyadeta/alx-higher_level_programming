@@ -9,13 +9,13 @@ class Square:
         __size: Size of the square
 
     Args:
-        __size: Size of the square
+        size: Size of the square
 
     Raises:
         TypeError: If size is not an integer
         ValueError: If size is less than 0
     """
-    def __int__(self, size = 0):
+    def __int__(self, size=0):
         if size < 0:
             raise ValueError
         try:
