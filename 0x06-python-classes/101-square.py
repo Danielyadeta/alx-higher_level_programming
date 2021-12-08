@@ -62,19 +62,19 @@ class Square:
 
     @property
     def position(self):
-        """Gets the size of the square.
+        """Gets the position tuple.
 
         Returns:
-            The size the square
+            The position
         """
         return self.__position
 
     @position.setter
     def position(self, value):
-        """Sets the size.
+        """Sets the position.
 
         Args:
-            value: Value to set size
+            value: position value to set
         """
         if len(value) < 2 or type(value[0]) is not int or\
                 type(value[1]) is not int or\
