@@ -1,18 +1,18 @@
 #!/usr/bin/python3
-"""Definition of MagicClass that does exactly the  same as a Python
-bytecode given in the task.
+"""Definition of MagicClass class that does exactly the same as a
+Python bytecode given in the task.
 """
 import math
 
 
 class MagicClass:
-    """Defiines a class MagicClass.
+    """Defines a class MagicClass.
 
     Attributes:
-        __radius: Size of the square
+        __radius: radius of the circle
 
         Arg:
-            radius: The radius of the new MagicClass.
+            radius: radius of the circle
         """
     def __init__(self, radius=0):
         if type(radius) is not int and type(radius) is not float:
