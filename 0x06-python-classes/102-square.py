@@ -55,25 +55,25 @@ class Square:
             self.__size = value
 
     def __eq__(self, other_square):
-        """Defines the == comparision."""
+        """Defines the equals(==) operator."""
         return self.area() == other_square.area()
 
     def __ne__(self, other_square):
-        """Defines the != comparison."""
+        """Defines the not equals (!=) operator."""
         return self.area() != other_square.area()
 
     def __lt__(self, other_square):
-        """Defines the < comparison."""
+        """Defines the less than (<) operator."""
         return self.area() < other_square.area()
 
     def __gt__(self, other_square):
-        """Defines the > comparison."""
+        """Defines the greater than (>) operator."""
         return self.area() > other_square.area()
 
     def __le__(self, other_square):
-        """Defines the <= comparison."""
+        """Defines the less than or equal to (<=) operator."""
         return self.area() <= other_square.area()
 
     def __ge__(self, other_square):
-        """Defines the >= compmarison."""
+        """Defines the greater than or equal to (>=) operator."""
         return self.area() >= other_square.area()
