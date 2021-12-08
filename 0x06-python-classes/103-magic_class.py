@@ -11,8 +11,8 @@ class MagicClass:
     Attributes:
         __radius: radius of the circle
 
-        Arg:
-            radius: radius of the circle
+    Args:
+        radius: radius of the circle
         """
     def __init__(self, radius=0):
         if type(radius) is not int and type(radius) is not float:
