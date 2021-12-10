@@ -1,0 +1,48 @@
+The ``addition`` module
+=======================
+
+Using ``add_integer``
+---------------------
+
+This is an addition text file to test the add_integer function, First
+import ``add_integer`` from the ``addition`` module:
+
+    >>> add_integer = __import__("0-add_integer").add_integer
+
+Test normal addition:
+    >>> add_integer(9, 8)
+    17
+
+Test negative addition:
+    >>> add_integer(9, -8)
+    1
+
+Test negative addition 2:
+    >>> add_integer(-9, 8)
+    -1
+
+Test float addition:
+    >>> add_integer(9.8, 8.9)
+    17
+
+Test float negative addition:
+    >>> add_integer(-9.8, 8.9)
+    -1
+
+Test list addition:
+    >>> add_integer([9, 8], 98)
+    Traceback (most recent call last):
+        ...
+    TypeError: a must be an integer
+
+Test list addition two:
+    >>> add_integer(98, [9, 8])
+    Traceback (most recent call last):
+        ...
+    TypeError: b must be an integer
+
+Test addition with boolean:
+    >>> add_integer(True, 9)
+    Traceback (most recent call last):
+        ...
+    TypeError: a must be an integer
