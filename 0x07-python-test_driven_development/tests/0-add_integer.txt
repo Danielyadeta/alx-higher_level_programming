@@ -1,13 +1,21 @@
-The ``addition`` module
+The ``0-add_integer`` module
 =======================
 
 Using ``add_integer``
 ---------------------
 
-This is an addition text file to test the add_integer function, First
-import ``add_integer`` from the ``addition`` module:
+This is a 0-add_integer text file to test the add_integer function, First
+import ``add_integer`` from the ``0-add_integer`` module:
 
     >>> add_integer = __import__("0-add_integer").add_integer
+
+Test for module documentation:
+    >>> len(__import__("0-add_integer").__doc__) > 10
+    True
+
+Test for function documentation:
+    >>> len(__import__("0-add_integer").add_integer.__doc__) > 10
+    True
 
 Test normal addition:
     >>> add_integer(9, 8)
@@ -42,7 +50,7 @@ Test list addition two:
     TypeError: b must be an integer
 
 Test addition with boolean:
-    >>> add_integer(True, 9)
+    >>> add_integer(True, 98)
     Traceback (most recent call last):
         ...
     TypeError: a must be an integer

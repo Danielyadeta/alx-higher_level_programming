@@ -3,6 +3,8 @@
 This is the "addition" module.
 
 The addition module supplies one function, add_integer(). For example,
+
+add_integer(1, 2) returns 3.
 """
 
 def add_integer(a, b=98):
