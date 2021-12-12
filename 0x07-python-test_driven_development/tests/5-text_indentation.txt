@@ -1,0 +1,38 @@
+The ``5-text_indentation`` module
+=======================
+
+Using ``text_indentation``
+---------------------
+
+This is a 5-text_indentation text file to test the text_indentation function, First
+import ``text_indentation`` from the ``5-text_indentation`` module:
+
+    >>> text_indentation = __import__("5-text_indentation").text_indentation
+
+Test for module documentation:
+    >>> len(__import__("5-text_indentation").__doc__) > 10
+    True
+
+Test for function documentation:
+    >>> len(__import__("5-text_indentation").text_indentation.__doc__) > 10
+    True
+
+Test for normal operation:
+    >>> text_indentation("Hello. This is Kidus.")
+    Hello.
+    <BLANKLINE>
+    This is Kidus.
+    <BLANKLINE>
+
+Test for non string text:
+    >>> text_indentation(98)
+    Traceback (most recent call last):
+    ...
+    TypeError: text must be a string
+
+Test for many spaces:
+    >>> text_indentation("Hello:                       This is Kidus?")
+    Hello:
+    <BLANKLINE>
+    This is Kidus?
+    <BLANKLINE> 
