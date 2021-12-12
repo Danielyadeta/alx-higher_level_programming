@@ -1,0 +1,43 @@
+The ``4-print_square`` module
+=======================
+
+Using ``print_square``
+---------------------
+
+This is a 4-print_square text file to test the print_square function, First
+import ``print_square`` from the ``4-print_square`` module:
+
+    >>> print_square = __import__("4-print_square").print_square
+
+Test for module documentation:
+    >>> len(__import__("4-print_square").__doc__) > 10
+    True
+
+Test for function documentation:
+    >>> len(__import__("4-print_square").print_square.__doc__) > 10
+    True
+
+Test for normal operation:
+    >>> print_square(4)
+    ####
+    ####
+    ####
+    ####
+
+Test with float size:
+    >>> print_square(9.8)
+    Traceback (most recent call last):
+        ...
+    TypeError: size must be an integer
+
+Test with negative size:
+    >>> print_square(-9)
+    Traceback (most recent call last):
+        ...
+    ValueError: size must be >= 0
+
+Test with string size:
+    >>> print_square("hello")
+    Traceback (most recent call last):
+        ...
+    TypeError: size must be an integer
