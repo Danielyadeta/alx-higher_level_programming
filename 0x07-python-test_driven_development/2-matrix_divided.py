@@ -19,6 +19,7 @@ def matrix_divided(matrix, div):
     for i in range(len(matrix)):
         if len(matrix[i]) != mat_size:
             raise TypeError("Each row of the matrix must have the same size")
+            break
     new_mat = [[0] * len(matrix[0]) for i in range(len(matrix))]
 
     for i in range(len(matrix)):
