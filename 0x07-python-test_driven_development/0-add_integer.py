@@ -1,8 +1,7 @@
 #!/usr/bin/python3
 """
-This is the "addition" module.
-
-The addition module supplies one function, add_integer(). For example,
+This is the "0-add_integer" module.
+The 0-add_integer module supplies one function, add_integer(). For example,
 
 add_integer(1, 2) returns 3.
 """
