@@ -1,0 +1,38 @@
+The ``3-say_my_name`` module
+=======================
+
+Using ``say_my_name``
+---------------------
+
+This is a 3-say_my_name text file to test the say_my_name function, First
+import ``say_my_name`` from the ``3-say_my_name`` module:
+
+    >>> say_my_name = __import__("3-say_my_name").say_my_name
+
+Test for module documentation:
+    >>> len(__import__("3-say_my_name").__doc__) > 10
+    True
+
+Test for function documentation:
+    >>> len(__import__("3-say_my_name").say_my_name.__doc__) > 10
+    True
+
+Test for normal operation:
+    >>> say_my_name("Kidus", "Worku")
+    My name is Kidus Worku
+
+Test for only first name:
+    >>> say_my_name("Kidus")
+    My name is Kidus 
+
+Test for non string last name:
+    >>> say_my_name("Kidus", 98)
+    Traceback (most recent call last):
+        ...
+    TypeError: last_name must be a string
+
+Test for non string first name:
+    >>> say_my_name(98, "Worku")
+    Traceback (most recent call last):
+        ...
+    TypeError: first_name must be a string
