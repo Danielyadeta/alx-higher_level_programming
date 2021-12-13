@@ -1,11 +1,18 @@
 #!/usr/bin/python3
 """
-Contains the matrix_mul function
+This is the "100-matrix_mul" module.
+
+The 100-matrix_mul module supplies one function, matrix_mul().
+For example,
+
+matrix_mul([[1, 2], [3, 4]], [[1, 2], [3, 4]]) returns:
+
+[[7, 10], [15, 22]]
 """
 
 
 def matrix_mul(m_a, m_b):
-    """Multiply two matrices(lists of lists of integers/floats)"""
+    """Multiplies two matrices and returns the result"""
     if type(m_a) is not list:
         raise TypeError("m_a must be a list")
     l1 = len(m_a)
