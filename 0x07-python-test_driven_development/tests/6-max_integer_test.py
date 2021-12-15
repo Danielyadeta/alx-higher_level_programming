@@ -9,11 +9,11 @@ class TestMaxInteger(unittest.TestCase):
     """unittest class for max_integer"""
     def test_documentation_module(self):
         """Tests for module documentation"""
-        self.assertTrue(len(__import__('6-max_integer').__doc__) > 10)
+        self.assertTrue(len(__import__('6-max_integer').__doc__) > 1)
 
     def test_documentation_function(self):
         """Tests for funstion documentation"""
-        self.assertTrue(len(max_integer.__doc__) > 10)
+        self.assertTrue(len(max_integer.__doc__) > 1)
 
     def test_normal_list(self):
         """Tests for normal operation"""
