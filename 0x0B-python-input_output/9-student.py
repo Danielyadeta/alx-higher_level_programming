@@ -1,8 +1,5 @@
 #!/usr/bin/python3
-"""
-This is the "0-read_file" module.
-The 0-read_file module supplies one function, read_file().
-"""
+"""Definition of Student class"""
 
 
 class Student:
