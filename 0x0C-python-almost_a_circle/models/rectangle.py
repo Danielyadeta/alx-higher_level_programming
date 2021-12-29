@@ -146,3 +146,17 @@ class Rectangle(Base):
         """Unofficial string representation of the Rectangle class."""
         return "[Rectangle] ({:d}) {:d}/{:d} - {:d}/{:d}".\
             format(self.id, self.__x, self.__y, self.__width, self.__height)
+
+    def update(self, *args):
+        """Update the class by assigning argument to each attribute"""
+        for i in range(len(args)):
+            if i is 0:
+                self.id = args[0]
+            elif i is 1:
+                self.__width = args[i]
+            elif i is 2:
+                self.__height = args[i]
+            elif i is 3:
+                self.__x = args[i]
+            elif i is 4:
+                self.__y = args[i]
