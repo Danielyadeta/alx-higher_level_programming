@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """Definition of Rectangle class"""
 import json
+import models
 
 
 class Base:
@@ -26,3 +27,16 @@ class Base:
         if list_dictionaries is None or len(list_dictionaries) <= 0:
             return "[]"
         return json.dumps(list_dictionaries)
+
+    @classmethod
+    def save_to_file(cls, list_objs):
+        filename = type(list_objs[0]).__name__ + ".json"
+        with open(filename, "a") as f:
+            delim = ", "
+            f.write("[")
+            for i in range(len(list_objs)):
+                if i is len(list_objs) - 1:
+                    delim = ""
+                f.write(cls.to_json_string(
+                       list_objs[i].to_dictionary()) + delim)
+            f.write("]")
