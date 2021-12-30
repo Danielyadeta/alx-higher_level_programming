@@ -44,3 +44,16 @@ class Square(Rectangle):
         return "[Square] ({:d}) {:d}/{:d} - {:d}".\
             format(self.id, self._Rectangle__x, self._Rectangle__y,
                    self._Rectangle__width)
+
+    def update(self, *args, **kwargs):
+        """Update the class by assigning argument to each attribute"""
+        if len(args) > 1:
+            args = list(args)
+            args.insert(1, args[1])
+            args = tuple(args)
+
+        if "size" in kwargs.keys():
+            kwargs.update({'width': kwargs.get('size')})
+            kwargs.update({'height': kwargs.get('size')})
+
+        super().update(*args, **kwargs)
