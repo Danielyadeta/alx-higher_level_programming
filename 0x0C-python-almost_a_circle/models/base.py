@@ -40,3 +40,8 @@ class Base:
                 f.write(cls.to_json_string(
                        list_objs[i].to_dictionary()) + delim)
             f.write("]")
+
+    def from_json_string(json_string):
+        if json_string is not None:
+            return json.loads(json_string)
+        return []
