@@ -23,6 +23,7 @@ class Base:
             Base.__nb_objects += 1
             self.id = Base.__nb_objects
 
+    @staticmethod
     def to_json_string(list_dictionaries):
         if list_dictionaries is None or len(list_dictionaries) <= 0:
             return "[]"
@@ -41,7 +42,17 @@ class Base:
                        list_objs[i].to_dictionary()) + delim)
             f.write("]")
 
+    @staticmethod
     def from_json_string(json_string):
         if json_string is not None:
             return json.loads(json_string)
         return []
+
+    @classmethod
+    def create(cls, **dictionary):
+        if cls.__name__ is "Rectangle":
+            dummy_o = cls(9, 8)
+        elif cls.__name__ is "Square":
+            dummy_o = cls(98)
+        dummy_o.update(**dictionary)
+        return dummy_o
