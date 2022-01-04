@@ -4,6 +4,7 @@ import json
 import models
 import csv
 
+
 class Base:
     """Defines a class rectangle.
 
