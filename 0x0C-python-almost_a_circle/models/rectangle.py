@@ -175,6 +175,7 @@ class Rectangle(Base):
                     self.__y = value
 
     def to_dictionary(self):
+        """Returns a dictionary representation of the object."""
         dict = {}
         dict.update({'id': self.id, 'width': self.__width,
                      'height': self.__height, 'x': self.__x,
