@@ -9,6 +9,7 @@ from sys import argv
 
 
 if __name__ == '__main__':
+""" Main entrance of execution of the program """
 
     username = argv[1]
     password = argv[2]
