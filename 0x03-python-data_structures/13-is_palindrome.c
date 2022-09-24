@@ -1,59 +1,22 @@
 #include "lists.h"
-
 /**
- * is_palindrome - Check if is palindrome
- *
- * @head: Head of Linked List
- *
- * Return: 0 if not palindrome, 1 if is palindrome
+ * is_palindrome - checks if palindrome
+ * @head: head of node
+ * Return: 0 if not, 1 if is
  */
-
 int is_palindrome(listint_t **head)
 {
+	unsigned int len = 1;
+	listint_t *temp;
 
-	if (!*head || !(*head))
-	{
+	if (head == NULL|| *head == NULL)
 		return (1);
-	}
 
-	if (p_check(head, *head))
+	temp = *head;
+	while (temp) /* get len of list */
 	{
-		return (1);
-	}
-	return (0);
-}
-
-/**
- *  p_check - Check for palindrome
- *
- *  @left: Go left
- *
- *  @right: Go right
- *
- *  Return: Integer
- */
-
-
-int p_check(listint_t **left, listint_t *right)
-{
-	int is_p = 0;
-
-	if (right)
-	{
-		is_p = p_check(left, right->next);
-	}
-	else
-	{
-		return (1);
-	}
-
-	if (is_p == 1)
-	{
-		if ((*left)->n == right->n)
-		{
-			(*left) = (*left)->next;
-			return (1);
-		}
+		temp = temp->next;
+		len++;
 	}
 	return (0);
 }
